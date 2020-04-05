@@ -1,0 +1,15 @@
+{
+  "extends": "../../../../tslint.json",
+  "rules": {
+    "directive-selector": [true, "attribute", "typeSafeFullStack", "camelCase"],
+    "component-selector": [
+      true,
+      "element",
+      "type-safe-full-stack",
+      "kebab-case"
+    ]
+  },
+  "linterOptions": {
+    "exclude": ["!**/*"]
+  }
+}

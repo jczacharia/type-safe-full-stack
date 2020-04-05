@@ -20,17 +20,59 @@
   },
   "projects": {
     "ng-app": {
-      "tags": []
+      "tags": ["executable:frontend"]
     },
     "ng-app-e2e": {
       "tags": [],
       "implicitDependencies": ["ng-app"]
     },
     "api": {
-      "tags": []
+      "tags": ["executable:backend"]
     },
-    "api-interfaces": {
-      "tags": []
+    "backend-core-application-services": {
+      "tags": ["platform:backend", "layer:application-services"]
+    },
+    "backend-core-domain-services": {
+      "tags": ["platform:backend", "layer:domain-services"]
+    },
+    "backend-core-domain": {
+      "tags": ["platform:backend", "layer:domain"]
+    },
+    "backend-infrastructure": {
+      "tags": ["platform:backend", "layer:infrastructure"]
+    },
+    "backend-shell": {
+      "tags": ["platform:backend", "layer:shell"]
+    },
+    "backend-ui-rest": {
+      "tags": ["platform:backend", "layer:ui"]
+    },
+    "shared-domain": {
+      "tags": ["platform:any", "scope:shared", "type:domain", "layer:domain"]
+    },
+    "shared-utils": {
+      "tags": ["platform:any", "scope:shared", "type:utils", "layer:utils"]
+    },
+    "frontend-login-data-access": {
+      "tags": ["platform:frontend", "scope:login", "type:data-access"]
+    },
+    "frontend-login-feature-login": {
+      "tags": ["platform:frontend", "scope:login", "type:feature"]
+    },
+    "frontend-login-shell": {
+      "tags": ["platform:frontend", "scope:login", "type:shell"]
+    },
+    "frontend-portal-data-access": {
+      "tags": ["platform:frontend", "scope:portal", "type:data-access"]
+    },
+    "frontend-portal-feature-home": {
+      "tags": ["platform:frontend", "scope:portal", "type:feature"]
+    },
+    "frontend-portal-shell": {
+      "tags": ["platform:frontend", "scope:portal", "type:shell"]
+    },
+    "frontend-shared-data-access": {
+      "tags": ["platform:frontend", "scope:shared", "type:data-access"]
     }
   }
 }

@@ -1,8 +1,5 @@
 {
-  "rulesDirectory": [
-    "node_modules/@nrwl/workspace/src/tslint",
-    "node_modules/codelyzer"
-  ],
+  "rulesDirectory": ["node_modules/@nrwl/workspace/src/tslint", "node_modules/codelyzer"],
   "linterOptions": {
     "exclude": ["**/*"]
   },
@@ -20,12 +17,7 @@
     "member-ordering": [
       true,
       {
-        "order": [
-          "static-field",
-          "instance-field",
-          "static-method",
-          "instance-method"
-        ]
+        "order": ["static-field", "instance-field", "static-method", "instance-method"]
       }
     ],
     "no-arg": true,
@@ -60,8 +52,91 @@
         "allow": [],
         "depConstraints": [
           {
-            "sourceTag": "*",
-            "onlyDependOnLibsWithTags": ["*"]
+            "sourceTag": "executable:frontend",
+            "onlyDependOnLibsWithTags": ["type:shell"]
+          },
+          {
+            "sourceTag": "executable:backend",
+            "onlyDependOnLibsWithTags": ["layer:ui"]
+          },
+          {
+            "sourceTag": "platform:backend",
+            "onlyDependOnLibsWithTags": ["platform:backend", "platform:any"]
+          },
+          {
+            "sourceTag": "platform:frontend",
+            "onlyDependOnLibsWithTags": ["platform:frontend", "platform:any"]
+          },
+          {
+            "sourceTag": "layer:utils",
+            "onlyDependOnLibsWithTags": []
+          },
+          {
+            "sourceTag": "layer:domain",
+            "onlyDependOnLibsWithTags": ["layer:domain", "layer:utils"]
+          },
+          {
+            "sourceTag": "layer:domain-services",
+            "onlyDependOnLibsWithTags": ["layer:utils", "layer:domain"]
+          },
+          {
+            "sourceTag": "layer:application-services",
+            "onlyDependOnLibsWithTags": ["layer:utils", "layer:domain", "layer:domain-services"]
+          },
+          {
+            "sourceTag": "layer:infrastructure",
+            "onlyDependOnLibsWithTags": [
+              "layer:utils",
+              "layer:domain",
+              "layer:domain-services",
+              "layer:application-services"
+            ]
+          },
+          {
+            "sourceTag": "layer:shell",
+            "onlyDependOnLibsWithTags": [
+              "layer:utils",
+              "layer:domain",
+              "layer:domain-services",
+              "layer:application-services",
+              "layer:infrastructure"
+            ]
+          },
+          {
+            "sourceTag": "layer:ui",
+            "onlyDependOnLibsWithTags": ["layer:domain", "layer:application-services", "layer:shell"]
+          },
+          {
+            "sourceTag": "scope:shared",
+            "onlyDependOnLibsWithTags": ["scope:shared"]
+          },
+          {
+            "sourceTag": "scope:login",
+            "onlyDependOnLibsWithTags": ["scope:login", "scope:shared"]
+          },
+          {
+            "sourceTag": "scope:portal",
+            "onlyDependOnLibsWithTags": ["scope:portal", "scope:shared"]
+          },
+          {
+            "sourceTag": "type:utils",
+            "onlyDependOnLibsWithTags": ["type:utils"]
+          },
+          {
+            "sourceTag": "type:domain",
+            "onlyDependOnLibsWithTags": ["type:utils", "type:domain"]
+          },
+          {
+            "sourceTag": "type:shell",
+            "onlyDependOnLibsWithTags": ["type:utils", "type:domain", "type:feature"]
+          },
+          {
+            "sourceTag": "type:feature",
+            "onlyDependOnLibsWithTags": ["type:utils", "type:domain", "type:data-access"]
+          },
+          {
+            "sourceTag": "type:data-access",
+            "onlyDependOnLibsWithTags": ["type:utils", "type:domain", "type:data-access"]
           }
         ]
       }

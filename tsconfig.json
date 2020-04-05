@@ -1,6 +1,14 @@
 {
   "compileOnSave": false,
+  "angularCompilerOptions": {
+    "strictTemplates": true
+  },
   "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "strict": true,
+    "noUnusedLocals": false,
+    "noErrorTruncation": true,
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
@@ -16,9 +24,30 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@type-safe-full-stack/api-interfaces": [
-        "libs/api-interfaces/src/index.ts"
-      ]
+      "@type-safe-full-stack/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@type-safe-full-stack/backend/core/application-services": [
+        "libs/backend/core/application-services/src/index.ts"
+      ],
+      "@type-safe-full-stack/backend/core/domain-services": [
+        "libs/backend/core/domain-services/src/index.ts"
+      ],
+      "@type-safe-full-stack/backend/core/domain": ["libs/backend/core/domain/src/index.ts"],
+      "@type-safe-full-stack/backend/infrastructure": ["libs/backend/infrastructure/src/index.ts"],
+      "@type-safe-full-stack/backend/shell": ["libs/backend/shell/src/index.ts"],
+      "@type-safe-full-stack/backend/ui-rest": ["libs/backend/ui-rest/src/index.ts"],
+      "@type-safe-full-stack/shared/domain": ["libs/shared/domain/src/index.ts"],
+      "@type-safe-full-stack/shared/utils": ["libs/shared/utils/src/index.ts"],
+      "@type-safe-full-stack/frontend/login/data-access": ["libs/frontend/login/data-access/src/index.ts"],
+      "@type-safe-full-stack/frontend/login/feature-login": [
+        "libs/frontend/login/feature-login/src/index.ts"
+      ],
+      "@type-safe-full-stack/frontend/login/shell": ["libs/frontend/login/shell/src/index.ts"],
+      "@type-safe-full-stack/frontend/portal/data-access": ["libs/frontend/portal/data-access/src/index.ts"],
+      "@type-safe-full-stack/frontend/portal/feature-home": [
+        "libs/frontend/portal/feature-home/src/index.ts"
+      ],
+      "@type-safe-full-stack/frontend/portal/shell": ["libs/frontend/portal/shell/src/index.ts"],
+      "@type-safe-full-stack/frontend/shared/data-access": ["libs/frontend/shared/data-access/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
