@@ -60,6 +60,10 @@
             "onlyDependOnLibsWithTags": ["layer:ui"]
           },
           {
+            "sourceTag": "platform:any",
+            "onlyDependOnLibsWithTags": ["platform:any"]
+          },
+          {
             "sourceTag": "platform:backend",
             "onlyDependOnLibsWithTags": ["platform:backend", "platform:any"]
           },
