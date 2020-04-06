@@ -1,7 +1,7 @@
 module.exports = {
-  name: 'frontend-login-feature-login',
+  name: 'frontend-public-feature-login',
   preset: '../../../../jest.config.js',
-  coverageDirectory: '../../../../coverage/libs/frontend/login/feature-login',
+  coverageDirectory: '../../../../coverage/libs/frontend/public/feature-login',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',

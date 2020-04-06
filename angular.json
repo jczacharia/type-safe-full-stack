@@ -368,29 +368,29 @@
         }
       }
     },
-    "frontend-login-data-access": {
+    "frontend-public-data-access": {
       "projectType": "library",
-      "root": "libs/frontend/login/data-access",
-      "sourceRoot": "libs/frontend/login/data-access/src",
+      "root": "libs/frontend/public/data-access",
+      "sourceRoot": "libs/frontend/public/data-access/src",
       "prefix": "type-safe-full-stack",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/frontend/login/data-access/tsconfig.lib.json",
-              "libs/frontend/login/data-access/tsconfig.spec.json"
+              "libs/frontend/public/data-access/tsconfig.lib.json",
+              "libs/frontend/public/data-access/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/frontend/login/data-access/**"]
+            "exclude": ["**/node_modules/**", "!libs/frontend/public/data-access/**"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/frontend/login/data-access/jest.config.js",
-            "tsConfig": "libs/frontend/login/data-access/tsconfig.spec.json",
+            "jestConfig": "libs/frontend/public/data-access/jest.config.js",
+            "tsConfig": "libs/frontend/public/data-access/tsconfig.spec.json",
             "passWithNoTests": true,
-            "setupFile": "libs/frontend/login/data-access/src/test-setup.ts"
+            "setupFile": "libs/frontend/public/data-access/src/test-setup.ts"
           }
         }
       },
@@ -400,29 +400,29 @@
         }
       }
     },
-    "frontend-login-feature-login": {
+    "frontend-public-feature-login": {
       "projectType": "library",
-      "root": "libs/frontend/login/feature-login",
-      "sourceRoot": "libs/frontend/login/feature-login/src",
+      "root": "libs/frontend/public/feature-login",
+      "sourceRoot": "libs/frontend/public/feature-login/src",
       "prefix": "type-safe-full-stack",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/frontend/login/feature-login/tsconfig.lib.json",
-              "libs/frontend/login/feature-login/tsconfig.spec.json"
+              "libs/frontend/public/feature-login/tsconfig.lib.json",
+              "libs/frontend/public/feature-login/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/frontend/login/feature-login/**"]
+            "exclude": ["**/node_modules/**", "!libs/frontend/public/feature-login/**"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/frontend/login/feature-login/jest.config.js",
-            "tsConfig": "libs/frontend/login/feature-login/tsconfig.spec.json",
+            "jestConfig": "libs/frontend/public/feature-login/jest.config.js",
+            "tsConfig": "libs/frontend/public/feature-login/tsconfig.spec.json",
             "passWithNoTests": true,
-            "setupFile": "libs/frontend/login/feature-login/src/test-setup.ts"
+            "setupFile": "libs/frontend/public/feature-login/src/test-setup.ts"
           }
         }
       },
@@ -432,29 +432,29 @@
         }
       }
     },
-    "frontend-login-shell": {
+    "frontend-public-shell": {
       "projectType": "library",
-      "root": "libs/frontend/login/shell",
-      "sourceRoot": "libs/frontend/login/shell/src",
+      "root": "libs/frontend/public/shell",
+      "sourceRoot": "libs/frontend/public/shell/src",
       "prefix": "type-safe-full-stack",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/frontend/login/shell/tsconfig.lib.json",
-              "libs/frontend/login/shell/tsconfig.spec.json"
+              "libs/frontend/public/shell/tsconfig.lib.json",
+              "libs/frontend/public/shell/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/frontend/login/shell/**"]
+            "exclude": ["**/node_modules/**", "!libs/frontend/public/shell/**"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/frontend/login/shell/jest.config.js",
-            "tsConfig": "libs/frontend/login/shell/tsconfig.spec.json",
+            "jestConfig": "libs/frontend/public/shell/jest.config.js",
+            "tsConfig": "libs/frontend/public/shell/tsconfig.spec.json",
             "passWithNoTests": true,
-            "setupFile": "libs/frontend/login/shell/src/test-setup.ts"
+            "setupFile": "libs/frontend/public/shell/src/test-setup.ts"
           }
         }
       },

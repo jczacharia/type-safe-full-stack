@@ -37,11 +37,11 @@
       "@type-safe-full-stack/backend/ui-rest": ["libs/backend/ui-rest/src/index.ts"],
       "@type-safe-full-stack/shared/domain": ["libs/shared/domain/src/index.ts"],
       "@type-safe-full-stack/shared/utils": ["libs/shared/utils/src/index.ts"],
-      "@type-safe-full-stack/frontend/login/data-access": ["libs/frontend/login/data-access/src/index.ts"],
-      "@type-safe-full-stack/frontend/login/feature-login": [
-        "libs/frontend/login/feature-login/src/index.ts"
+      "@type-safe-full-stack/frontend/public/data-access": ["libs/frontend/public/data-access/src/index.ts"],
+      "@type-safe-full-stack/frontend/public/feature-login": [
+        "libs/frontend/public/feature-login/src/index.ts"
       ],
-      "@type-safe-full-stack/frontend/login/shell": ["libs/frontend/login/shell/src/index.ts"],
+      "@type-safe-full-stack/frontend/public/shell": ["libs/frontend/public/shell/src/index.ts"],
       "@type-safe-full-stack/frontend/portal/data-access": ["libs/frontend/portal/data-access/src/index.ts"],
       "@type-safe-full-stack/frontend/portal/feature-home": [
         "libs/frontend/portal/feature-home/src/index.ts"

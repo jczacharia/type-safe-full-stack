@@ -53,14 +53,14 @@
     "shared-utils": {
       "tags": ["platform:any", "scope:shared", "type:utils", "layer:utils"]
     },
-    "frontend-login-data-access": {
-      "tags": ["platform:frontend", "scope:login", "type:data-access"]
+    "frontend-public-data-access": {
+      "tags": ["platform:frontend", "scope:public", "type:data-access"]
     },
-    "frontend-login-feature-login": {
-      "tags": ["platform:frontend", "scope:login", "type:feature"]
+    "frontend-public-feature-login": {
+      "tags": ["platform:frontend", "scope:public", "type:feature"]
     },
-    "frontend-login-shell": {
-      "tags": ["platform:frontend", "scope:login", "type:shell"]
+    "frontend-public-shell": {
+      "tags": ["platform:frontend", "scope:public", "type:shell"]
     },
     "frontend-portal-data-access": {
       "tags": ["platform:frontend", "scope:portal", "type:data-access"]

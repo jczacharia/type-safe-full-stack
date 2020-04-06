@@ -7,9 +7,9 @@ import { RouterModule } from '@angular/router';
       {
         path: '',
         loadChildren: () =>
-          import('@type-safe-full-stack/frontend/login/feature-login').then((m) => m.LoginPageModule),
+          import('@type-safe-full-stack/frontend/public/feature-login').then((m) => m.LoginPageModule),
       },
     ]),
   ],
 })
-export class FrontendLoginShellModule {}
+export class FrontendPublicShellModule {}

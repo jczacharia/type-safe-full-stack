@@ -16,10 +16,10 @@ yarn ng generate @nrwl/workspace:library --name=utils --directory=shared --tags=
 
 
 # ## Frontend  ##
-# Login
-yarn ng generate @nrwl/angular:library --name=data-access --style=scss --directory=frontend/login --tags=platform:frontend,scope:login,type:data-access --no-interactive &&
-yarn ng generate @nrwl/angular:library --name=feature-login --style=scss --directory=frontend/login --tags=platform:frontend,scope:login,type:feature --no-interactive &&
-yarn ng generate @nrwl/angular:library --name=shell --style=scss --directory=frontend/login --tags=platform:frontend,scope:login,type:shell --no-interactive &&
+# Public
+yarn ng generate @nrwl/angular:library --name=data-access --style=scss --directory=frontend/public --tags=platform:frontend,scope:public,type:data-access --no-interactive &&
+yarn ng generate @nrwl/angular:library --name=feature-login --style=scss --directory=frontend/public --tags=platform:frontend,scope:public,type:feature --no-interactive &&
+yarn ng generate @nrwl/angular:library --name=shell --style=scss --directory=frontend/public --tags=platform:frontend,scope:public,type:shell --no-interactive &&
 
 # Portal
 yarn ng generate @nrwl/angular:library --name=data-access --style=scss --directory=frontend/portal --tags=platform:frontend,scope:portal,type:data-access --no-interactive &&

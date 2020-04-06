@@ -11,16 +11,16 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     RouterModule.forRoot([
       {
-        path: 'login',
+        path: 'public',
         loadChildren: () =>
-          import('@type-safe-full-stack/frontend/login/shell').then((m) => m.FrontendLoginShellModule),
+          import('@type-safe-full-stack/frontend/public/shell').then((m) => m.FrontendPublicShellModule),
       },
       {
         path: 'portal',
         loadChildren: () =>
           import('@type-safe-full-stack/frontend/portal/shell').then((m) => m.FrontendPortalShellModule),
       },
-      { path: '**', redirectTo: 'login' },
+      { path: '**', redirectTo: 'public' },
     ]),
   ],
   bootstrap: [AppComponent],

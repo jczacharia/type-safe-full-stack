@@ -111,8 +111,8 @@
             "onlyDependOnLibsWithTags": ["scope:shared"]
           },
           {
-            "sourceTag": "scope:login",
-            "onlyDependOnLibsWithTags": ["scope:login", "scope:shared"]
+            "sourceTag": "scope:public",
+            "onlyDependOnLibsWithTags": ["scope:public", "scope:shared"]
           },
           {
             "sourceTag": "scope:portal",
