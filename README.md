@@ -1,3 +1,7 @@
+Make sure you have postgres installed and add its credentials to `apps/api/src/app/app.module`
+In a terminal run `npm run start:frontend`
+In another terminal run `npm run start:backend`
+
 # TypeSafeFullStack
 
 This project was generated using [Nx](https://nx.dev).
