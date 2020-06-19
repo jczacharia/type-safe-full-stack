@@ -1,4 +1,4 @@
-Make sure you have postgres installed and add its credentials to `apps/api/src/app/app.module` \
+Make sure you have postgres running and add its credentials to `apps/api/src/app/app.module` \
 In a terminal run `npm run start:frontend` \
 In another terminal run `npm run start:backend`
 
