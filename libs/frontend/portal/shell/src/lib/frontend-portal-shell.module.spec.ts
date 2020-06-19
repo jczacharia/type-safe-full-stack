@@ -4,7 +4,7 @@ import { FrontendPortalShellModule } from './frontend-portal-shell.module';
 describe('FrontendPortalShellModule', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [FrontendPortalShellModule]
+      imports: [FrontendPortalShellModule],
     }).compileComponents();
   }));
 

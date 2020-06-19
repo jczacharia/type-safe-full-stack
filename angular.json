@@ -78,7 +78,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": ["apps/ng-app/tsconfig.app.json", "apps/ng-app/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**", "!apps/ng-app/**"]
+            "exclude": ["**/node_modules/**", "!apps/ng-app/**/*"]
           }
         },
         "test": {
@@ -114,7 +114,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": ["apps/ng-app-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/ng-app-e2e/**"]
+            "exclude": ["**/node_modules/**", "!apps/ng-app-e2e/**/*"]
           }
         }
       }
@@ -159,7 +159,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": ["apps/api/tsconfig.app.json", "apps/api/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**", "!apps/api/**"]
+            "exclude": ["**/node_modules/**", "!apps/api/**/*"]
           }
         },
         "test": {
@@ -185,7 +185,7 @@
               "libs/backend/core/application-services/tsconfig.lib.json",
               "libs/backend/core/application-services/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/backend/core/application-services/**"]
+            "exclude": ["**/node_modules/**", "!libs/backend/core/application-services/**/*"]
           }
         },
         "test": {
@@ -211,7 +211,7 @@
               "libs/backend/core/domain-services/tsconfig.lib.json",
               "libs/backend/core/domain-services/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/backend/core/domain-services/**"]
+            "exclude": ["**/node_modules/**", "!libs/backend/core/domain-services/**/*"]
           }
         },
         "test": {
@@ -219,32 +219,6 @@
           "options": {
             "jestConfig": "libs/backend/core/domain-services/jest.config.js",
             "tsConfig": "libs/backend/core/domain-services/tsconfig.spec.json",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "backend-core-domain": {
-      "root": "libs/backend/core/domain",
-      "sourceRoot": "libs/backend/core/domain/src",
-      "projectType": "library",
-      "schematics": {},
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/backend/core/domain/tsconfig.lib.json",
-              "libs/backend/core/domain/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!libs/backend/core/domain/**"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/backend/core/domain/jest.config.js",
-            "tsConfig": "libs/backend/core/domain/tsconfig.spec.json",
             "passWithNoTests": true
           }
         }
@@ -263,7 +237,7 @@
               "libs/backend/infrastructure/tsconfig.lib.json",
               "libs/backend/infrastructure/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/backend/infrastructure/**"]
+            "exclude": ["**/node_modules/**", "!libs/backend/infrastructure/**/*"]
           }
         },
         "test": {
@@ -286,7 +260,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": ["libs/backend/shell/tsconfig.lib.json", "libs/backend/shell/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**", "!libs/backend/shell/**"]
+            "exclude": ["**/node_modules/**", "!libs/backend/shell/**/*"]
           }
         },
         "test": {
@@ -309,7 +283,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": ["libs/backend/ui-rest/tsconfig.lib.json", "libs/backend/ui-rest/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**", "!libs/backend/ui-rest/**"]
+            "exclude": ["**/node_modules/**", "!libs/backend/ui-rest/**/*"]
           }
         },
         "test": {
@@ -332,7 +306,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": ["libs/shared/domain/tsconfig.lib.json", "libs/shared/domain/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**", "!libs/shared/domain/**"]
+            "exclude": ["**/node_modules/**", "!libs/shared/domain/**/*"]
           }
         },
         "test": {
@@ -355,7 +329,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": ["libs/shared/utils/tsconfig.lib.json", "libs/shared/utils/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**", "!libs/shared/utils/**"]
+            "exclude": ["**/node_modules/**", "!libs/shared/utils/**/*"]
           }
         },
         "test": {
@@ -381,7 +355,7 @@
               "libs/frontend/public/data-access/tsconfig.lib.json",
               "libs/frontend/public/data-access/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/frontend/public/data-access/**"]
+            "exclude": ["**/node_modules/**", "!libs/frontend/public/data-access/**/*"]
           }
         },
         "test": {
@@ -413,7 +387,7 @@
               "libs/frontend/public/feature-login/tsconfig.lib.json",
               "libs/frontend/public/feature-login/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/frontend/public/feature-login/**"]
+            "exclude": ["**/node_modules/**", "!libs/frontend/public/feature-login/**/*"]
           }
         },
         "test": {
@@ -445,7 +419,7 @@
               "libs/frontend/public/shell/tsconfig.lib.json",
               "libs/frontend/public/shell/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/frontend/public/shell/**"]
+            "exclude": ["**/node_modules/**", "!libs/frontend/public/shell/**/*"]
           }
         },
         "test": {
@@ -477,7 +451,7 @@
               "libs/frontend/portal/data-access/tsconfig.lib.json",
               "libs/frontend/portal/data-access/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/frontend/portal/data-access/**"]
+            "exclude": ["**/node_modules/**", "!libs/frontend/portal/data-access/**/*"]
           }
         },
         "test": {
@@ -509,7 +483,7 @@
               "libs/frontend/portal/feature-home/tsconfig.lib.json",
               "libs/frontend/portal/feature-home/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/frontend/portal/feature-home/**"]
+            "exclude": ["**/node_modules/**", "!libs/frontend/portal/feature-home/**/*"]
           }
         },
         "test": {
@@ -541,7 +515,7 @@
               "libs/frontend/portal/shell/tsconfig.lib.json",
               "libs/frontend/portal/shell/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/frontend/portal/shell/**"]
+            "exclude": ["**/node_modules/**", "!libs/frontend/portal/shell/**/*"]
           }
         },
         "test": {
@@ -573,7 +547,7 @@
               "libs/frontend/shared/data-access/tsconfig.lib.json",
               "libs/frontend/shared/data-access/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/frontend/shared/data-access/**"]
+            "exclude": ["**/node_modules/**", "!libs/frontend/shared/data-access/**/*"]
           }
         },
         "test": {

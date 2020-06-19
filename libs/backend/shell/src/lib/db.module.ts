@@ -1,6 +1,6 @@
-import { UserProfileEntity } from '@type-safe-full-stack/backend/core/domain';
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { UserProfileEntity } from '@type-safe-full-stack/backend/infrastructure';
 
 const typeormModule = TypeOrmModule.forFeature([UserProfileEntity]);
 

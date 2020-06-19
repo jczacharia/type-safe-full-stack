@@ -4,7 +4,7 @@ import { FrontendPublicShellModule } from './frontend-Public-shell.module';
 describe('FrontendPublicShellModule', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [FrontendPublicShellModule]
+      imports: [FrontendPublicShellModule],
     }).compileComponents();
   }));
 

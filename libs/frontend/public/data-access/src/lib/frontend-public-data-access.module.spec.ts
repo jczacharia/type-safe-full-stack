@@ -4,7 +4,7 @@ import { FrontendPublicDataAccessModule } from './frontend-Public-data-access.mo
 describe('FrontendPublicDataAccessModule', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [FrontendPublicDataAccessModule]
+      imports: [FrontendPublicDataAccessModule],
     }).compileComponents();
   }));
 

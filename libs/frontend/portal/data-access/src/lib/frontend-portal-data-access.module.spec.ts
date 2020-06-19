@@ -4,7 +4,7 @@ import { FrontendPortalDataAccessModule } from './frontend-portal-data-access.mo
 describe('FrontendPortalDataAccessModule', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [FrontendPortalDataAccessModule]
+      imports: [FrontendPortalDataAccessModule],
     }).compileComponents();
   }));
 

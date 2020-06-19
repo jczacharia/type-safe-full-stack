@@ -35,9 +35,6 @@
     "backend-core-domain-services": {
       "tags": ["platform:backend", "layer:domain-services"]
     },
-    "backend-core-domain": {
-      "tags": ["platform:backend", "layer:domain"]
-    },
     "backend-infrastructure": {
       "tags": ["platform:backend", "layer:infrastructure"]
     },

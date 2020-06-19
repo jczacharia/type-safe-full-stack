@@ -1,7 +1,7 @@
-import { UserProfileEntity } from '@type-safe-full-stack/backend/core/domain';
-import { IUserProfileDomainRepository } from '@type-safe-full-stack/backend/core/domain-services';
 import { InjectRepository } from '@nestjs/typeorm';
+import { IUserProfileDomainRepository } from '@type-safe-full-stack/backend/core/domain-services';
 import { Repository } from 'typeorm';
+import { UserProfileEntity } from '../entities/user-profile.entity';
 
 export class UserProfileRepositoryAdapter implements IUserProfileDomainRepository {
   constructor(
